@@ -90,12 +90,12 @@ img:hover{
 article{
     padding-bottom: 30px;
 }
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 500px) {
    .container{
        display: flex;
    }  
   }
-  @media screen and (max-width:600px) {
+  @media screen and (max-width:500px) {
     .top a{
         display: none;
       }
