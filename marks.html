@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <link rel="stylesheet" href="CSS/style.css">
+        <link rel="stylesheet" href="CSS/form-style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="JS/val.js"></script>
+    </head>
+<body>
+    <div class="top" id="Topnav">
+    <header style="background-image: url(Assets/head.jpg);"><h1>Live  Virtual  Class</h1></header>
+    <NAV>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="#" style="background-color: white;">Marks</a></li>
+            <li><a href="quiz.html">Quiz</a></li>
+            <li><a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a></li>
+        </ul>
+    </NAV>
+    </div>
+    <div class="container">
+        <div class="left">
+            <video src="https://www.pluralsight.com/content/dam/pluralsight2/compressed-video/skills.mp4" autoplay loop></video>
+            <video src="https://www.pluralsight.com/content/dam/pluralsight2/compressed-video/skills.mp4" autoplay loop></video>
+            <video src="https://www.pluralsight.com/content/dam/pluralsight2/compressed-video/skills.mp4" autoplay loop></video>
+            <video src="https://www.pluralsight.com/content/dam/pluralsight2/compressed-video/skills.mp4" autoplay loop></video>
+
+        </div>
+        <div class="middle">
+         <div class="form">
+             <div class="mak">
+             <form action="get" name="marks" onsubmit="return cal();">
+                <fieldset style="padding-top: 40px; padding-bottom: 20px;"> 
+                    <legend style="max-width: 100%;">Student marks</legend>
+                    <table>
+                        <tr>
+                         <th><input type="number" name="eng" id="eng" min="0" max="100">English </th><th><input type="number" name="gk" id="gk" min="0" max="100">GK</th><th><input type="number" name="math" id="math" min="0" max="100">Math</th>
+                        </tr>
+                        <tr>
+                            <th colspan="3">Result:</th>
+                        </tr>
+                        <tr>
+                            <th><input type="number" name="total" id="total">Total Marks</th><th><input type="text" name="percent" id="percent">%</th><th><input type="text" name="highest" id="highest">Highest</th>
+                        </tr>
+                        <tr>
+                            <th colspan="3"><button type="submit">Submit</button></th>
+                        </tr>
+                    </table>
+                </fieldset>
+             </form>
+         </div>  
+        </div>
+        </div>
+        <div class="right">
+            <video src="https://www.pluralsight.com/content/dam/pluralsight2/compressed-video/skills.mp4" autoplay></video>
+            <video src="https://www.pluralsight.com/content/dam/pluralsight2/compressed-video/skills.mp4" autoplay></video>
+            <video src="https://www.pluralsight.com/content/dam/pluralsight2/compressed-video/skills.mp4" autoplay></video>
+            <video src="https://www.pluralsight.com/content/dam/pluralsight2/compressed-video/skills.mp4" autoplay></video>
+          
+        </div>
+
+    </div>
+    <footer style="background-color: black; color: white;"><center><h3>footer</h3><em>@copyright</em></center></footer>
+    <script>
+        function myFunction() {
+          var x = document.getElementById("Topnav");
+          if (x.className === "top") {
+            x.className += " responsive";
+          } else {
+            x.className = "top";
+          }
+        }
+        </script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="JS/script.js"></script>
+        <title></title>
+
+        <link rel="stylesheet" href="CSS/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+<body onload="data()">
+    <div class="top" id="Topnav">
+    <header style="background-image: url(Assets/head.jpg);"><h1>Live  Virtual  Class</h1></header>
+    <NAV>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="marks.html">Marks</a></li>
+            <li><a href="#" style="background-color: white;">Quiz</a></li>
+            <li><a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a></li>
+        </ul>
+    </NAV>
+    </div>
+    <div class="container">
+        <div class="left">
+            <video src="https://www.pluralsight.com/content/dam/pluralsight2/compressed-video/skills.mp4" autoplay></video>
+        </div>
+        <div class="middle">
+          
+            <fieldset class="test">
+                <legend style="font-size: 20px; max-width: 100%;">Online Test</legend>
+                <em style="padding-left: 90%;">2 marks each</em>
+                <p><b> Q 1. </b> HTML is used for</p>
+                   <p><input type="radio" name="q1" id="q1">Creating dynamic page</p>
+                   <p><input type="radio" name="q1" id="q1">Creating static page</p>
+                   <p><input type="radio" name="q1" id="q1">both</p>
+                   <p><input type="radio" name="q1" id="q1">none of the above</p>
+                <br><br>
+                <p><b>Q 2.</b> Javascript is used for</p>
+                <p><input type="radio" name="q2" id="q2">security on server side</p>
+                <p><input type="radio" name="q2" id="q2">decorating web page</p>
+                <p><input type="radio" name="q2" id="q2">providing validation on client side</p>
+                <p><input type="radio" name="q2" id="q2">none of the above</p> 
+                <button type="submit" onclick="check()">submit</button>  
+            </fieldset>
+         
+        </div>
+        <div class="right">
+            <video src="https://www.pluralsight.com/content/dam/pluralsight2/compressed-video/skills.mp4" autoplay></video>
+        </div>
+
+    </div>
+    <footer style="background-color: black; color: white;"><center><h3>footer</h3><em>@copyright</em></center></footer>
+    <script>
+        function myFunction() {
+          var x = document.getElementById("Topnav");
+          if (x.className === "top") {
+            x.className += " responsive";
+          } else {
+            x.className = "top";
+          }
+        }
+        </script>
+</body>
+</html>

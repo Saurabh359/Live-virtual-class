@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <link rel="stylesheet" href="CSS/style.css">
+        <link rel="stylesheet" href="CSS/form-style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="JS/val.js"></script>
+    </head>
+<body>
+    <div class="top" id="Topnav">
+    <header style="background-image: url(Assets/head.jpg);"><h1>Live  Virtual  Class</h1></header>
+    <NAV>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="#" style="background-color: white;">Login</a></li>
+            <li><a href="marks.html">Marks</a></li>
+            <li><a href="quiz.html">Quiz</a></li>
+            <li><a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a></li>
+        </ul> 
+    </NAV> 
+    </div>
+    <div class="container">
+        <div class="left">
+            <video src="https://www.pluralsight.com/content/dam/pluralsight2/compressed-video/skills.mp4" autoplay></video>
+            <video src="https://www.pluralsight.com/content/dam/pluralsight2/compressed-video/skills.mp4" autoplay></video>
+            <video src="https://www.pluralsight.com/content/dam/pluralsight2/compressed-video/skills.mp4" autoplay></video>
+            <video src="https://www.pluralsight.com/content/dam/pluralsight2/compressed-video/skills.mp4" autoplay></video>
+        </div>
+        <div class="middle">
+         <div class="form">
+             <fieldset>
+                 <legend><b>Registration</b></legend>
+             <form name="log" onsubmit="return validate();" > 
+                <table>
+                  <tr>   
+                 <th><h3>Name : </h3></th><th> <input type="text" name="name" placeholder="your name" onkeyup="nameval()"><i><span id="nw" style="color: red;"></span></i></th>
+                 </tr>
+                 <tr>
+                 <th><h3>Place : </h3></th><th><input type="text" name="place" id="place" placeholder="place name" onfocus="func5()"></th>
+                 </tr>
+                 <tr>
+                 <th><h3>Gender : </h3></th><th><input type="radio" name="gender" id="gender">male <input type="radio" name="gender" id="gender">female </th>
+                 </tr>
+                 <tr> 
+                 <th><h3>Course : </h3></th><th><input type="checkbox" name="course" id="course"> C++ <input type="checkbox" name="course" id="course"> Python<input type="checkbox" name="course" id="course"> Java</th>
+                 </tr> 
+                 <tr>
+                <th><h3>Mobile no. : </h3></th><th><input type="number" name="number" id="number"></th>
+                 </tr>
+                 <tr>
+                 <th colspan="2"><h3><button type="submit">Submit</button></h3></th>
+                </tr>
+                </table> 
+             </form>
+            </fieldset>
+
+         </div>  
+        </div>
+        <div class="right">
+            <video src="https://www.pluralsight.com/content/dam/pluralsight2/compressed-video/skills.mp4" autoplay></video>
+            <video src="https://www.pluralsight.com/content/dam/pluralsight2/compressed-video/skills.mp4" autoplay></video>
+            <video src="https://www.pluralsight.com/content/dam/pluralsight2/compressed-video/skills.mp4" autoplay></video>
+            <video src="https://www.pluralsight.com/content/dam/pluralsight2/compressed-video/skills.mp4" autoplay></video>
+        </div>
+
+    </div>
+    <footer style="background-color: black; color: white;"><center><h3>footer</h3><em>@copyright</em></center></footer>
+    <script>
+        function myFunction() {
+          var x = document.getElementById("Topnav");
+          if (x.className === "top") {
+            x.className += " responsive";
+          } else {
+            x.className = "top";
+          }
+        }
+        </script>
+</body>
+</html>
